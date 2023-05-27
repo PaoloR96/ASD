@@ -1,0 +1,59 @@
+def trovaMaxPalindromo(str):
+    #trasformo i caretteri della stringa rendendoli tutti minuscoli
+    str = str.lower()
+    
+    #elimino gli spazi nell stringa
+    str =str.replace(" ", "")
+    
+    # lunghezza della stringa in input
+    n = len(str);
+ 
+    #inizializzo table
+    table = [[False for i in range(n)] for j in range(n)];
+ 
+    # tutte le sottostringhe con lunghezza 1 sono palindrome
+    lunghezzaMax = 1;
+ 
+    for i in range(n):
+        table[i][i] = True;
+ 
+    # controllo le sottostringhe di lunghezza 2
+ 
+    for i in range(n - 1):
+ 
+        # saranno palindrome solo se ci sono due caratteri adiacenti uguali
+        if (str[i] == str[i + 1]):
+            # aggiorno table[i][i + 1]
+            table[i][i + 1] = True;
+            lunghezzaMax = 2;
+ 
+    # controllo delle sottostringhe di lungezza maggiore di 2
+    for k in range(3, n + 1):
+ 
+        # sistemo l'indice iniziale
+        for i in range(n - k + 1):
+ 
+            # creo l'indice finale della sottostringa di lunghezza k
+            j = i + k - 1;
+ 
+            
+            #controllo la presenza di sottostringhe palindeome in str[i,j]
+            if (table[i + 1][j - 1] and str[i] == str[j]):
+ 
+                # setto a true
+                table[i][j] = True;
+ 
+                # aggiorno la massima lunghezza
+                if (k > lunghezzaMax):
+                    lunghezzaMax = k;
+ 
+    # ritorno la massima lughezza
+    return lunghezzaMax;
+ 
+ 
+# codice di test
+if __name__ == '__main__':
+    # stringa in ingresso
+    input = "i topi noN avevano nipoti";
+ 
+    print(trovaMaxPalindromo(input));

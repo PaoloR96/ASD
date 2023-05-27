@@ -1,0 +1,47 @@
+
+def countingSort(Arr):
+    
+    #calcolo min e max , abbimo un ciclo for con if , pertanto la complessità sarà O(n)
+    max = min = 0
+    size = len(Arr)
+    for i in range(0, size):
+        if(Arr[i] > max):
+            max = Arr[i]
+        elif(Arr[i] < min):
+            min = Arr[i]
+
+    range_of_elements = max - min + 1
+    #inizializzo a 0 il vettore finale e il vettore del count
+    output = [0 for _ in range(size)]
+    count = [0 for _ in range(range_of_elements)]
+
+    #ciclo for per il numero di occorrenze dei singoli numerri del vettore in input
+    for i in range(0, size):
+        count[Arr[i] - min] += 1
+
+    #ciclo for per il conteggio delle occorrenze <= i
+    for i in range(1, max-min+1):
+        count[i] += count[i - 1]
+
+    #creo il vettore di output
+    for i in range(0, size):
+        
+        output[i] = count[Arr[i]-min]
+
+    return output
+
+
+#codice di test
+A = [1,1,1,1]
+B = countingSort(A)
+print("A= " + str(A))
+print("B= " + str(B))
+
+A = [4,3,5,2,1,10,1,0,1]
+B = countingSort(A)
+print("A= " + str(A))
+print("B= " + str(B))
+
+#la soluzione implementata è riconducibile all'algoritmo del CountigSort con una rivisitazione della stampa
+#dell'output "output[i] = count[Arr[i]-min]". la complessità è pari a quella del CountigSort (O(n)); pertanto,
+#la soluzione proposta è una soluzione contenuta nella complessità O(nlogn) detttata dalla traccia
