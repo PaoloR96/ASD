@@ -1,0 +1,52 @@
+#uso la programmazione dinamca
+
+def divisione_bottino(monete):
+    n = len(monete)
+    somma_totale = sum(monete)
+    
+    dp = [0 for _ in range(somma_totale + 1)]
+    dp[0] = 1
+    
+    for i in range(n):
+        for j in range(somma_totale, monete[i] - 1, -1):
+            dp[j] |= dp[j - monete[i]]
+    
+    for diff in range((somma_totale + 1) // 2, somma_totale + 1):
+        if dp[diff]:
+            return diff - (somma_totale - diff)
+
+#casi di Test
+
+test = [6,
+        5,
+        1,4,7,4,8,
+        4,
+        5,4,9,1,
+        1,
+        50,
+        7,
+        1,5,2,67,4,12,3,
+        4,
+        2,13,500,32,
+        9,
+        24,57,999,45,678,432,345,78,9]
+
+n_test = test[0]
+i=1
+
+for j in range (n_test):
+    n_monete = test[i]
+    i += 1
+    
+    arr_monete = test[i:i+n_monete]
+    print(divisione_bottino(arr_monete))
+
+    i = i+n_monete
+    
+    
+
+#la coplessità coputazionale è O(nS) 
+#n è il numero di monete
+#S è la somma totale delle monete
+#infatti l'algoritmo implementato esamina ogni moneta e
+#per ogni moneta possiamo aggiornare fino ad S elementi dell'array dp

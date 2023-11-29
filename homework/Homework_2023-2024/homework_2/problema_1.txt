@@ -1,0 +1,27 @@
+#utilizzo l'algoritmo di kadane
+
+def max_subarr_sum(arr):
+    max_lontano = arr[0]
+    max_fine = arr[0]
+    
+    for i in range(1, len(arr)):
+        max_fine = max(arr[i], max_fine + arr[i])
+        max_lontano = max(max_lontano, max_fine)
+        
+    return max_lontano
+
+a_1 = [-1, -3, 4, 2]
+a_2 = [-1, 2, -5, 7]
+a_3 = [0, 2, -1, 6]
+a_4 = [-5, 4, -2, 1]
+a_5 = [4, 1, -2, 3]
+
+a = [a_1,a_2,a_3,a_4,a_5]
+
+for i in range(len(a)):
+    
+    print ("MAX: ", max_subarr_sum(a[i]))
+
+
+#Time Complexity: O(n)
+#Auxiliary Space: O(1)
