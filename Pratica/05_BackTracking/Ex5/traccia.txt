@@ -1,0 +1,16 @@
+Dato un insieme S di numeri positivi e un valore target,
+scrivere un algoritmo che trovi tutti i sottoinsiemi di S la cui somma è uguale a target.
+
+📥 Input
+S = {2, 3, 5, 6, 8}
+target = 8
+
+📤 Output atteso
+
+[2, 6]
+[3, 5]
+[8]
+
+
+
+

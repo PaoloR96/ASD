@@ -1,0 +1,20 @@
+PROBLEMA 1 
+Si implementi un algoritmo seguendo l’approccio Divide et Impera per contare le occorrenze di un 
+intero K in un array non ordinato A[].  
+ 
+INPUT 
+L’input inizia con un numero intero che indica il numero di casi di test. Ogni riga successiva è un caso 
+di test. Il primo numero della riga indica K. Il secondo numero indica la dimensione dell’array. I 
+numeri dal terzo in poi costituiscono gli elementi dell’array A  
+ 
+OUTPUT 
+Si stampi una riga per ogni caso di test, riportante il conteggio delle occorrenze  
+ 
+Sample Input 
+2 
+1 7 1 1 2 2 2 2 3 
+4 7 1 1 2 2 2 2 3 
+
+Sample Output 
+2 
+0

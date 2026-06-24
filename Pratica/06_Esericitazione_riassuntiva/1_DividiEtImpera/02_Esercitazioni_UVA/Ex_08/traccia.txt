@@ -1,0 +1,28 @@
+Viene dato un singolo numero intero positivo i. 
+Scrivi un programma per trovare la cifra situata nella posizione i 
+nella sequenza dei gruppi di numeri S1S2 ... Sk.
+
+Ogni gruppo Sk consiste in una sequenza di numeri interi positivi che vanno da 1 a k, 
+scritti uno dopo l’altro.
+
+Ad esempio, le prime 80 cifre della sequenza sono le seguenti:
+11212312341234512345612345671234567812345678912345678910123456789101112345678910
+
+Input
+La prima riga del file di input contiene un singolo intero t (1 ≤ t ≤ 25), 
+il numero di casi di test, seguito da una riga per ciascun caso di test.
+
+La riga di un caso di test contiene il singolo intero i (1 ≤ i ≤ 2147483647).
+
+Output
+Per ciascun caso di test deve esserci una riga di output contenente 
+la cifra situata nella posizione i.
+
+Esempio di Input
+2
+8
+3
+
+Esempio di Output
+2
+2

@@ -1,0 +1,9 @@
+Si consideri il seguente problema di minimo percorso vincolato. Sia data una matrice 
+rettangolare di 1 e 0, in cui 1 indica una cella che è possibile percorrere e 0 una cella che 
+non è possibile percorrere. Inoltre, si assuma che non è possibile percorrere neanche le 
+quattro celle adiacenti (sinistra, destra, sopra e sotto) ad una cella che contiene uno 0.  
+Calcolare la lunghezza del più breve percorso possibile da qualsiasi cella nella prima 
+colonna a qualsiasi cella nell'ultima colonna della matrice. L’obiettivo è evitare le celle 
+contrassegnate con 0 e le loro quattro celle adiacenti (sinistra, destra, sopra e sotto).  
+Le mosse possibili da una determinata cella sono lo spostamento di una cella adiacente a 
+sinistra, destra, sopra o sotto  (non sono consentiti spostamenti in diagonale).  

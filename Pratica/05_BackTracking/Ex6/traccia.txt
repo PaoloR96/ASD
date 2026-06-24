@@ -1,0 +1,17 @@
+Descrizione 
+Posizionare n regine su una scacchiera n×n 
+in modo che nessuna regina possa attaccare un’altra, 
+cioè che non ci siano due regine nella stessa riga, colonna o diagonale. 
+
+Input: n = 4 
+
+Output atteso: 
+(una delle soluzioni) 
+
+. Q . .
+. . . Q 
+Q . . . 
+. . Q . 
+
+Obiettivo: introdurre vincoli multipli e uso di funzioni di controllo (colonne e diagonali).
+

@@ -1,0 +1,22 @@
+Prima dell’invenzione della stampa dei libri, era molto difficile creare una copia di un libro. Tutti i contenuti dovevano essere riscritti a mano dai cosiddetti scribi. Allo scriba veniva dato un libro e dopo diversi mesi completava la sua copia. Uno degli scribi più famosi visse nel XV secolo e il suo nome era Xaverius Endricus Remius Ontius Xendrianus (Xerox). In ogni caso, il lavoro era molto seccante e noioso. E l’unico modo per velocizzarlo era assumere più scribi.
+
+C’era una volta una compagnia teatrale che voleva mettere in scena famose tragedie antiche. I copioni di queste opere erano divisi in molti libri e gli attori avevano naturalmente bisogno di più copie. Così assunsero molti scribi per fare copie di questi libri. Immagina di avere m libri (numerati 1, 2, …, m) che possono avere un numero diverso di pagine (p1, p2, …, pm) e di voler fare una copia di ciascuno di essi. Il tuo compito è dividere questi libri tra k scribi, k ≤ m. Ogni libro può essere assegnato a un solo scriba, e ogni scriba deve ricevere una sequenza continua di libri. Ciò significa che esiste una successione crescente di numeri 0 = b0 < b1 < b2 < … < bk–1 < bk = m tale che lo scriba i-esimo riceve una sequenza di libri con numeri compresi tra bi–1 + 1 e bi. Il tempo necessario per fare una copia di tutti i libri è determinato dallo scriba a cui è stato assegnato il maggior carico di lavoro. Pertanto, il nostro obiettivo è minimizzare il massimo numero di pagine assegnate a un singolo scriba. Il tuo compito è trovare l’assegnazione ottimale.
+
+Input
+L’input consiste di N casi. La prima riga dell’input contiene un solo intero positivo N. Seguono poi i casi. Ogni caso è composto esattamente da due righe. Nella prima riga ci sono due interi m e k, 1 ≤ k ≤ m ≤ 500. Nella seconda riga ci sono gli interi p1, p2, …, pm separati da spazi. Tutti questi valori sono positivi e inferiori a 10 000 000.
+
+Output
+Per ogni caso, stampa esattamente una riga. La riga deve contenere la successione di input p1, p2, …, pm divisa in esattamente k parti in modo tale che la somma massima di una singola parte sia la più piccola possibile. Usa il carattere slash (‘/’) per separare le parti. Deve esserci esattamente uno spazio tra due numeri consecutivi e tra un numero e lo slash.
+
+Se c’è più di una soluzione, stampa quella che minimizza il lavoro assegnato al primo scriba, poi al secondo e così via. Ma a ogni scriba deve essere assegnato almeno un libro.
+
+Esempio di Input
+2
+9 3
+100 200 300 400 500 600 700 800 900
+5 4
+100 100 100 100 100
+
+Esempio di Output
+100 200 300 400 500 / 600 700 / 800 900
+100 / 100 / 100 / 100 100

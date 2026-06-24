@@ -1,0 +1,3 @@
+ Descrivere ed analizzare un algoritmo basato sul paradigma divide et impera che dato un vettore
+ordinato A[1..n] di interi strettamente positivi (cioe’ per ogni 1 ≤ i ≤ n, A[i] ≥ 1), restituisca il
+numero di occorrenze di 1 nel vettore A. L’algoritmo deve avere complessita’ di tempo O(log n).

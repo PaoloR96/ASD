@@ -1,0 +1,70 @@
+
+📚 Descrizione del Problema: Palle e Albero Binario
+Un numero K di palle viene fatto cadere una alla volta dalla radice di una 
+struttura ad albero binario completamente riempito (Fully Binary Tree, FBT). 
+Ogni volta, la palla che viene fatta cadere visita prima un nodo non terminale. 
+Successivamente, continua a muoversi verso il basso, seguendo il percorso 
+del sottoalbero sinistro o quello del sottoalbero destro , finché non si ferma su uno dei nodi foglia dell'FBT
+
+Per determinare la direzione di movimento di una palla, viene impostato un flag in ogni nodo non terminale 
+con due valori possibili: false o true.
+1)Inizialmente, tutti i flag sono impostati su false
+2)Quando si visita un nodo non terminale, se il valore corrente del flag in quel nodo è false, 
+la palla prima inverte il valore del flag (cioè da false a true) e poi segue il sottoalbero sinistro 
+di quel nodo per continuare a muoversi verso il basso.
+3)Altrimenti (se il flag è true), la palla anch'essa inverte il valore del flag (cioè da true a false) e poi segue 
+il sottoalbero destro di quel nodo per continuare a muoversi verso il basso.
+
+Inoltre, tutti i nodi dell'FBT sono numerati sequenzialmente, 
+partendo da 1 con i nodi alla profondità 1 (Depth = 1), poi quelli alla profondità 2 (Depth = 2), e così via. 
+I nodi a qualsiasi profondità sono numerati da sinistra a destra. 
+Ad esempio, la Figura 1 rappresenta un albero binario completamente riempito con profondità massima 4 con i numeri di nodo 1, 2, 3,.., 15.
+
+Poiché tutti i flag sono inizialmente impostati su false,
+la prima palla che viene fatta cadere invertirà i valori del flag ai nodi 1, 2 e 4 prima di fermarsi finalmente in posizione 8. 
+La seconda palla che viene fatta cadere invertirà i valori del flag ai nodi 1, 3 e 6, e si fermerà in posizione 12. 
+Ovviamente, la terza palla che viene fatta cadere invertirà i valori del flag ai nodi 1, 2 e 5 prima di fermarsi in posizione 10.
+
+Ora considerate un numero di casi di test in cui due valori saranno forniti per ogni test. 
+Il primo valore è D, la profondità massima dell'FBT 17, e il secondo è I, l'I-esima palla che viene fatta cadere. 
+Si può assumere che il valore di I non supererà il numero totale di nodi foglia per l'FBT dato.
+
+Per ogni caso di test, l'intervallo dei due parametri D e I è il seguente:
+1) 2<= D <=20
+2) 1 <= I <= 524288
+
+
+Formato di Input:
+L'input contiene l+2 righe
+
+Riga 1: l, il numero di casi di test.
+Riga 2: D_1 I_1 (caso di test #1: due numeri decimali separati da uno spazio vuoto).
+Riga k+1: D_k I_k (caso di test #k)
+Riga l+1: D_l I_l (caso di test #l)
+Riga l+2: -1 (una costante '-1' che rappresenta la fine del file di input)
+
+Formato di Output:
+L'output contiene l righe:
+
+Riga 1: La posizione di arresto P per il caso di test #1.
+Riga k: La posizione di arresto P per il caso di test #k.
+Riga l: La posizione di arresto P per il caso di test #l.
+
+
+
+
+Sample Input:
+5
+4  2
+3  4
+10 1
+2  2
+8  128
+-1
+
+Sample Output:
+12
+7
+512
+3
+255

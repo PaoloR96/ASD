@@ -1,0 +1,6 @@
+p714,10077,10566,10611,p10341,p10487,10810,p10706,p374
+
+| Problema UVA                    | Complessità tipica   | Tecnica                 |
+| ------------------------------- | -------------------- | ----------------------- |
+| **11235 – Frequent Values**     | **O(n log n)**       | Segment tree / D&C      |
+| **11495 – Bubbles and Buckets** | **O(n log n)**       | Ordinamento efficiente  |

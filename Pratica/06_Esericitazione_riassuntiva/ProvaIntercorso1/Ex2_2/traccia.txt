@@ -1,0 +1,26 @@
+PROBLEMA 2
+Una progressione aritmetica è una successione di numeri tali che la differenza tra ciascun termine
+(o elemento) della successione e il suo precedente è costante. La somma degli elementi in una
+progressione di n elementi è data da: S = ½ * n * (a1 + an), dove a1 ed an sono il primo e l’ultimo
+elemento. E’ dato in input un array di interi positivi che rappresenta una progressione aritmetica
+dove però manca un elemento. La massima lunghezza è 50, il massimo valore è 1000. Si implementi
+un algoritmo che trova l’elemento mancante.
+Suggerimento: una soluzione semplice si ottiene scorrendo il vettore, complessità O(N). Una
+soluzione più efficiente è utilizzare un approccio divide et impera.
+
+
+INPUT
+La prima riga contiene il numero di casi di test N. Ogni caso di test, che inizia alla riga successiva, è
+composto da due righe: la prima riportante la dimensione del vettore, la seconda riportante gli
+elementi del vettore separati da uno spazio.
+OUTPUT
+Si stampi, per ogni caso di test, il numero mancante.
+Sample Input
+2
+4
+1 3 5 9
+5
+2 4 8 10 12
+Sample Output
+7
+6

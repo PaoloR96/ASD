@@ -1,0 +1,5 @@
+ Sia A = A[1] . . . A[n] un vettore di n interi, che possono essere sia positivi che
+negativi. 
+Progettare un algoritmo basato sulla tecnica Divide et Impera 
+che conti il numero di elementi > 0 nel vettore A. Si analizzi la complessità
+di tempo dell’algoritmo proposto, giustificando le affermazioni fatte.

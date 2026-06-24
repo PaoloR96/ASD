@@ -1,0 +1,4 @@
+Sia A = A[1] . . .A[n] un vettore ordinato in senso crescente che `e stato shiftato k
+posizioni a sinistra. Avendo in input il solo vettore A, progettare un algoritmo basato sulla
+tecnica Divide et Impera che determini il valore k di cui sopra. Si analizzi la complessit`a di
+tempo dell’algoritmo proposto, giustificando le affermazioni fatte.

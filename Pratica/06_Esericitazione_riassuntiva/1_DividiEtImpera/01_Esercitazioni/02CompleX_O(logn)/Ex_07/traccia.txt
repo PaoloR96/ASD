@@ -1,0 +1,7 @@
+Esercizio: Si consideri il seguente problema:
+Input: array a=a[1]...a[n] contenente valori interi ordinati in senso non decrescente (possono
+essere presenti valori duplicati), intero x .
+Output: l’indice (la posizione) dell’dell’ultima occorrenza di x in a=a[1]...a[n], oppure 0
+se il valore x non `e presente in a=a[1]...a[n].
+Si progetti e si analizzi un algoritmo basato sulla tecnica Divide et Impera che risolve il prob-
+lema.

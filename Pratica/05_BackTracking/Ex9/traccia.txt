@@ -1,0 +1,18 @@
+Data una griglia 4x4 con alcuni numeri già presenti, 
+riempirla con numeri da 1 a 4 senza ripetizioni nella stessa riga e colonna.
+
+Input:
+
+0 2 0 0
+0 0 3 0
+4 0 0 0
+0 0 0 1
+
+Una possibile soluzione valida:
+
+1 2 4 3
+2 4 3 1
+4 1 2 5
+3 3 1 1
+
+Obiettivo: scorrere la griglia, tentare valori, controllare riga e colonna.

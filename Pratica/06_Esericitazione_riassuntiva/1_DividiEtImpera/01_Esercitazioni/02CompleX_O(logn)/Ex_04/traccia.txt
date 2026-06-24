@@ -1,0 +1,2 @@
+Esercizio: Siano A ed n numeri naturali positivi. Progettare un algoritmo basato sulla tecnica
+Divide et Impera che calcoli nA, utilizzando O(log n) addizioni.

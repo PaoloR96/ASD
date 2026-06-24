@@ -1,0 +1,5 @@
+Esercizio: Sia Sia A = A[1] . . .A[n] un vettore di n interi, tale che A[1] < . . . < A[n]. L’indice
+i ∈ {2, . . . , n} `e detto un salto, se vale che A[i − 1] + 1 < A[i]. Progettare un algoritmo che
+determini se il generico vettore A ha un salto, e nell’ipotesi che lo abbia, determini attraverso
+la tecnica Divide et Impera almeno un valore di i per cui A[i − 1] + 1 < A[i]. Si analizzi la
+complessit`a di tempo dell’algoritmo proposto, giustificando le affermazioni fatte.

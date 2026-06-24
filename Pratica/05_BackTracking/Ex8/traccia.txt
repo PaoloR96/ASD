@@ -1,0 +1,23 @@
+Dato un labirinto rappresentato da una matrice 0/1,
+trovare tutti i percorsi validi dall’ingresso all’uscita.
+
+Input:
+
+labirinto = {
+  {1, 1, 1, 1},
+  {1, 0, 0, 1},
+  {1, 1, 1, 1},
+  {0, 0, 1, 1}
+}
+
+
+
+Output atteso (esempio di percorso)
+
+Percorso 1: (0,0) → ... → (3,3)
+Percorso 2: (0,0) → ... → (3,3)
+...
+
+
+
+💡 Obiettivo: utilizzare il backtracking senza return immediato, continuando l’esplorazione.

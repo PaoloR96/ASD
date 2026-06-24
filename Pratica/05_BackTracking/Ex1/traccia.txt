@@ -1,0 +1,16 @@
+Scrivere un algoritmo che generi tutte le stringhe binarie di lunghezza n, 
+cioè sequenze di 0 e 1.Non ci sono vincoli o controlli;ogni posizione 
+può contenere un 0 o un 1.
+
+Input:
+n = 3
+
+Output atteso:
+000  
+001  
+010  
+011  
+100  
+101  
+110  
+111

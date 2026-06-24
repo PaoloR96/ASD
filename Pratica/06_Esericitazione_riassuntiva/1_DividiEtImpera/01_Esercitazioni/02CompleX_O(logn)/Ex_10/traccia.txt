@@ -1,0 +1,3 @@
+Progettare ed analizzare un algoritmo basato sulla tecnica Divide et Impera che, dato un vettore
+ordinato A[1....n], ed un intero k, restituisca Vero se esiste i€ {1.....n} tale che A[i] > k, Falso
+altrimenti, in tempo O(log n).

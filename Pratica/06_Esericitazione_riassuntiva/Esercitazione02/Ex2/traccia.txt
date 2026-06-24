@@ -1,0 +1,13 @@
+Si supponga di disporre di una scacchiera NxN. Si scriva un algoritmo di backtracking per 
+determinare il numero di modi in cui è possibile posizionare N regine in modo tale che nessuna 
+coppia di regine si possa attaccare a vicenda. 
+Quindi, una soluzione richiede che due regine non condividano la stessa riga, colonna o diagonale (si supponga N > 3). 
+L’input è il valore N. In output, 
+il programma deve riportare il numero di modi in cui è possibile posizionare N regine in modo tale 
+che nessuna coppia di regine si possa attaccare a vicenda.  
+Sample Input   
+N = 4 
+N = 5 
+Sample Output 
+Numero di configurazioni = 2 
+Numero di configurazioni = 10

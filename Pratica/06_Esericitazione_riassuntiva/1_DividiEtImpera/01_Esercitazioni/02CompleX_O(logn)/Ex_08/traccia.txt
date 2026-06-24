@@ -1,0 +1,11 @@
+Esercizio: Si consideri il seguente problema: la Ditta ACME `e stata quotata in borsa, ed il
+valore delle sue azioni sono state tabulate per tutto l’anno. Sia A il valore di una azione di
+ACME al primo Gennaio, e sia B il corrispondente valore al 31 Dicembre.
+(a) Se A > B, argomentare che c’`e stato un giorno dell’anno in cui l’azione di ACME `e stata
+quotata ad un valore inferiore al giorno precedente;
+
+(b) formalizzando opportunamente il problema in termini algoritmici (cio`e definendo con pre-
+cisione chi sono gli input e gli output al problema), sia dia un algoritmo di complessit`a
+logaritmica nella taglia dell’input che, sotto l’ipotesi che A > B, determini un giorno
+dell’anno in cui l’azione di ACME `e stata quotata ad un valore inferiore al giorno prece-
+dente.

@@ -1,0 +1,7 @@
+Esercizio: Consideriamo il seguente problema. Data una sequenza di numeri a = a[0]a[1] . . . a[n−
+1], un minimo relativo di a `e un elemento di a che `e minore o uguale dei suoi adiacenti (o di
+un solo adiacente, se stiamo considerando a[0] o a[n − 1].
+Si derivi e si analizzi un algoritmo basato sulla tecnica Divide et Impera per il seguente problema
+algoritmico.
+Input: array a = a[0]a[1] . . . a[n − 1]
+Output: un (qualsivoglia) minimo relativo di a.

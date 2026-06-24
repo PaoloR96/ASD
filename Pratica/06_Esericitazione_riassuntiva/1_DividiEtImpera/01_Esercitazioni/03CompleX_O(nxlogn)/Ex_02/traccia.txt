@@ -1,0 +1,4 @@
+Dato un vettore ordinato di interi A[1 . . . n] ed un intero N, si progetti e si analizzi
+un algoritmo basato sulla tecnica Divide et Impera che, preso in input il vettore A ed il numero
+N determini se esistono o meno due indici i e j per cui A[i]×A[j] = N. L’algoritmo deve avere
+complessit`a O(N logN).

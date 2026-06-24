@@ -1,0 +1,33 @@
+Ti viene fornita una sequenza di n interi a1, a2, ..., an in ordine non decrescente. 
+Inoltre, ti vengono fornite diverse interrogazioni (query) 
+costituite da indici i e j (1 ≤ i ≤ j ≤ n). 
+Per ogni interrogazione, determina il valore più frequente tra gli interi ai, ..., aj.
+
+Input
+L’input consiste di diversi casi di test. 
+Ogni caso di test inizia con una riga contenente due interi n e q (1 ≤ n, q ≤ 100000). 
+La riga successiva contiene n interi a1, ..., an (−100000 ≤ ai ≤ 100000, per ogni i ∈ {1, ..., n}), 
+separati da spazi. Si può assumere che per ogni i ∈ {1, ..., n−1} valga ai ≤ ai+1. 
+Le q righe successive contengono ciascuna una interrogazione, 
+composta da due interi i e j (1 ≤ i ≤ j ≤ n), che indicano gli indici di estremità dell’interrogazione.
+
+L’ultimo caso di test è seguito da una riga contenente un singolo ‘0’.
+
+Output
+Per ogni interrogazione, stampa una riga contenente un solo intero:
+ il numero di occorrenze del valore più frequente all’interno dell’intervallo dato.
+
+Nota: un algoritmo ingenuo potrebbe non essere sufficientemente veloce!
+
+Sample Input
+10 3
+-1 -1 1 1 1 1 3 10 10 10
+2 3
+1 10
+5 10
+0
+
+Sample Output
+1
+4
+3

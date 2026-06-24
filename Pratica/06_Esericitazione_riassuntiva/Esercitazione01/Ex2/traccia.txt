@@ -1,0 +1,14 @@
+Sia dato un insieme di n elementi, e si supponga che ogni elemento possa essere 
+accoppiato con qualche altro elemento oppure può essere non accoppiato (“single”). Ogni 
+elemento può essere accoppiato solo una volta. Si implementi un algoritmo per scoprire il 
+numero totale di modi in cui gli n elementi possono restare single o possono essere 
+accoppiati. Si utilizzi la programmazione dinamica per risolvere il problema.  
+Ad esempio:  
+Input : n = 3 
+Output : 4 
+Spiegazione: 
+{1}, {2}, {3} : tutti gli elementi sono single 
+{1}, {2, 3} : 2 e 3 sono accoppiati ma 1 è single.  
+{1, 2}, {3} : 1 e 2 sono accoppiati, ma 3 è single.  
+{1, 3}, {2} : 1 e 3 sono accoppiati, ma 2 è single. 
+Le coppie {a, b} e {b, a}  sono considerate come un’unica coppia. 

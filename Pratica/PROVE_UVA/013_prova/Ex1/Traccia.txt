@@ -1,0 +1,33 @@
+DESCRIZIONE DEL PROBLEMA
+
+Dato un array di interi nums, trova il sottoarray contiguo (contenente almeno un elemento) 
+che ha la somma massima e restituisci tale somma.
+
+Il problema può essere risolto utilizzando la tecnica Divide and Conquer.
+
+----------------------------------------
+
+INPUT
+- Un array di interi nums.
+
+OUTPUT
+- Un intero che rappresenta la somma massima di un sottoarray contiguo.
+
+----------------------------------------
+
+VINCOLI
+- 1 <= nums.length <= 100000
+- -10000 <= nums[i] <= 10000
+
+----------------------------------------
+
+ESEMPIO
+
+Input:
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+
+Output:
+6
+
+Spiegazione:
+Il sottoarray contiguo [4, -1, 2, 1] ha la somma massima pari a 6.

@@ -1,0 +1,53 @@
+C’era una volta uno scimpanzé chiamato Luchu Bandor (alias Playboy Chimp). 
+Luchu era infelicemente sposato con Bunty Mona, una piccola scimmietta carina ma bassa. 
+Luchu era alto e bello — si sentiva a disagio a portare Bunty nei luoghi pubblici con sé. 
+La gente li fissava continuamente. A un certo punto, 
+Luchu non ce la fece più e decise di fare giustizia al suo nome. 
+Cominciò a cercare una nuova speranza nella Lady Chimps’ High School.
+
+Ogni giorno Luchu si arrampicava su un albero di bambù e aspettava che iniziasse la lezione di ginnastica mattutina. 
+Da lì poteva vedere ogni singola scimmia femmina fare la sua routine. 
+
+Luchu stava cercando la scimmia femmina più alta che fosse più bassa di lui; 
+ma avrebbe anche considerato qualcuno leggermente più alto di lui. 
+Qualcuna della sua stessa altezza non sarebbe mai stata nella sua lista.
+
+Ogni mattina Luchu sceglieva una fila di scimmie femmine e trovava le migliori due secondo i criteri che si era dato. 
+Il suo compito era facilitato dal fatto che le scimmie in ogni fila erano ordinate per altezza: la più bassa davanti e la più alta dietro.
+
+Il tuo compito è aiutare Luchu, in un giorno particolare, a trovare due scimmie femmine: 
+la più alta più bassa di lui e la più bassa più alta di lui.
+
+Input
+Ci sarà un solo insieme di input per questo problema.
+
+La prima riga dell’input contiene un numero N (1 ≤ N ≤ 50000), il numero di scimmie femmine nella fila.
+
+Nella riga successiva ci saranno N numeri interi (nell’intervallo 1 fino a 2³¹−1) che indicano le altezze delle N scimmie. Ogni numero è separato da uno spazio. Puoi assumere che le scimmie siano ordinate in ordine non decrescente delle loro altezze.
+
+Nella riga successiva ci sarà un intero Q (1 ≤ Q ≤ 25000) che indica il numero di query.
+
+Poi seguiranno Q numeri che rappresentano le altezze di Luchu! Non preoccuparti: Luchu proviene da un luogo dove le persone possono avere 3 date di nascita; quindi Q altezze per uno scimpanzé non fanno differenza. I Q numeri sono elencati su una riga, separati da uno spazio e possono trovarsi in qualsiasi ordine.
+
+Output
+Per ogni altezza di query, stampa due numeri sulla stessa riga:
+
+L’altezza della scimmia femmina più alta più bassa di Luchu
+
+L’altezza della scimmia femmina più bassa più alta di lui
+
+I due numeri devono essere separati da uno spazio. Se non è possibile trovare uno dei due valori, sostituiscilo con una X maiuscola.
+
+Esempio di Input
+
+2
+5 7
+3
+6 8 10
+
+
+Esempio di Output
+
+5 7
+7 X
+7 X

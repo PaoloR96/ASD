@@ -1,0 +1,22 @@
+Una strada stretta è fiancheggiata da edifici alti. Una scala lunga x piedi è appoggiata alla base dell’edificio sul lato destro della strada e si appoggia all’edificio sul lato sinistro. Una scala lunga y piedi è appoggiata alla base dell’edificio sul lato sinistro della strada e si appoggia all’edificio sul lato destro. Il punto in cui le due scale si incrociano è esattamente c piedi dal suolo. Quanto è larga la strada?
+
+Input
+Ogni riga dell’input contiene tre numeri positivi in virgola mobile che rappresentano i valori di x, y e c.
+
+Output
+Per ogni riga dell’input, stampare una riga contenente un numero in virgola mobile che rappresenta la larghezza della strada in piedi, con tre cifre decimali.
+
+Esempio di Input
+
+30 40 10
+12.619429 8.163332 3
+10 10 3
+10 10 1
+
+
+Esempio di Output
+
+26.033
+7.000
+8.000
+9.798

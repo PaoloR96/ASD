@@ -1,0 +1,15 @@
+Si consideri una matrice di 0 ed 1, in cui “1” indica “posizione occupata” e “0” indica 
+“posizione libera”.
+ Si scriva un algoritmo per determinare la sottomatrice massima libera 
+(ossia che contiene tutti 0). 
+L’algoritmo deve riportare il numero di 0 di tale sottomatrice.  
+
+
+int matrix[6][6] = {
+        {0, 0, 0, 1, 0, 0},
+        {0, 0, 0, 0, 0, 0},
+        {0, 0, 1, 0, 0, 0},
+        {0, 0, 0, 0, 0, 1},
+        {0, 0, 0, 0, 0, 0},
+        {1, 0, 0, 0, 0, 0}
+    };

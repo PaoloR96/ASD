@@ -1,0 +1,18 @@
+Scrivere un algoritmo che generi tutti i sottoinsiemi possibili di un insieme S.
+Ogni elemento può essere incluso oppure escluso dal sottoinsieme.
+Input:
+S = {1, 2, 3}
+
+Output atteso:
+
+[]
+[1]
+[2]
+[3]
+[1, 2]
+[1, 3]
+[2, 3]
+[1, 2, 3]
+
+
+

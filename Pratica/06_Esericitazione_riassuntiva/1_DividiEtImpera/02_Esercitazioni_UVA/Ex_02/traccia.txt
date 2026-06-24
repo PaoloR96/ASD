@@ -1,0 +1,33 @@
+L’albero di Stern-Brocot è un metodo elegante per costruire l’insieme di tutte le frazioni non negative m/n dove m e n sono coprimi. L’idea è di iniziare con due frazioni (0/1 ; 1/0) e poi ripetere le seguenti operazioni quante volte si desidera: Inserire (m+m')/(n+n') tra due frazioni adiacenti m/n e m'/n'.
+
+Per esempio, il primo passo ci dà un nuovo elemento tra 0/1 e 1/0:
+0/1 ; 1/1 ; 1/0
+
+Il passo successivo ne dà altri due:
+0/1 ; 1/2 ; 1/1 ; 2/1 ; 1/0
+
+Il successivo ne produce altri quattro:
+0/1 ; 1/3 ; 1/2 ; 2/3 ; 1/1 ; 3/2 ; 2/1 ; 3/1 ; 1/0
+
+Poi otterremo 8, 16, e così via. L’intera sequenza può essere considerata come un albero binario infinito. La costruzione preserva l’ordine, e non è possibile ottenere la stessa frazione in due posizioni diverse.
+
+Possiamo considerare l’albero di Stern-Brocot come un sistema numerico per rappresentare i numeri razionali, perché ogni frazione positiva e ridotta compare esattamente una volta. Usiamo le lettere L e R per indicare lo spostamento verso il ramo sinistro o destro mentre procediamo dalla radice fino a una frazione specifica; una stringa di L e R identifica in modo univoco una posizione nell’albero.
+
+Per esempio, LRRL significa andare a sinistra da 1/1 a 1/2, poi a destra a 2/3, poi ancora a destra a 3/4, poi a sinistra a 5/7. Possiamo considerare LRRL come una rappresentazione di 5/7. Ogni frazione positiva viene rappresentata in questo modo come una stringa unica di L e R. Serve una notazione per rimanere alla radice; chiamiamola I, perché assomiglia a 1 e sta per “identità”.
+
+In questo problema, data una frazione razionale positiva, si richiede di rappresentarla nel sistema numerico di Stern-Brocot.
+
+Input:
+Il file di input contiene più casi di test. Ogni caso consiste in una riga contenente due numeri interi positivi m e n, coprimi. L’input termina con un caso contenente due 1 come m e n, e questo caso non deve essere elaborato.
+
+Output:
+Per ogni caso di test nell’input, produrre una riga contenente la rappresentazione della frazione data nel sistema numerico di Stern-Brocot.
+
+Esempio di input:
+5 7
+878 323
+1 1
+
+Esempio di output:
+LRRL
+RRLRRLRLLLLRLRRR

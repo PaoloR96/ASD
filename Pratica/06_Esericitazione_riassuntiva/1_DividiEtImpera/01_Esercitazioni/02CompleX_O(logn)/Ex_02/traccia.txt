@@ -1,0 +1,4 @@
+Esercizio: Sia A = A[1] . . .A[n] un vettore ordinato in senso crescente tale che A[i] ∈ {0, 1},
+per ogni i = 1, . . . , n. Progettare un algoritmo basato sulla tecnica Divide et Impera che conti il
+numero di elementi A[i] nel vettore A, per cui valga che A[i] = 1. Se ne analizzi la complessit`a.
+(Il massimo del punteggio lo si ottiene per un algoritmo di complessit`a O(log n).

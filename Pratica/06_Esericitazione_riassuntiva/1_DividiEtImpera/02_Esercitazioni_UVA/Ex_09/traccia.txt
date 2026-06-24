@@ -1,0 +1,25 @@
+Calcolare
+R := B^P mod M
+per valori grandi di B, P e M usando un algoritmo efficiente. (Esatto, questo problema ha una
+dipendenza dal tempo !!!)
+Input
+L'input conterrà diversi casi di test, ciascuno come descritto di seguito. I casi di test consecutivi
+sono separati da una singola riga vuota.
+Tre valori interi (nell'ordine B, P, M) saranno letti, un numero per riga. B e P sono numeri interi
+nell'intervallo da 0 a 2147483647 inclusi. M è un numero intero nell'intervallo da 1 a 46340 inclusi.
+Output
+Per ogni test, il risultato del calcolo. Un singolo numero intero su una riga da solo.
+Esempio di Input
+3
+18132
+17
+17
+1765
+3
+2374859
+3029382
+36123
+Esempio di Output
+13
+2
+13195

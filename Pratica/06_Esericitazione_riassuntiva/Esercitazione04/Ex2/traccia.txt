@@ -1,0 +1,59 @@
+CONTESTO DEL PROBLEMA
+
+Raju e Meena amano giocare con le biglie. Hanno molte biglie con numeri
+scritti sopra. All'inizio, Raju dispone le biglie una dopo l'altra in ordine
+ascendente dei numeri scritti su di esse. Poi Meena chiede a Raju di trovare
+la prima biglia con un certo numero. Lei conta 1...2...3. Raju ottiene un
+punto per la risposta corretta, e Meena ottiene un punto se Raju fallisce.
+Dopo un numero fisso di prove, il gioco finisce e il giocatore con il massimo
+dei punti vince. Oggi è il tuo turno di giocare come Raju. Essendo un ragazzo
+sveglio, prenderesti il favore di un computer. Ma non sottovalutare Meena,
+ha scritto un programma per tenere traccia di quanto tempo impieghi a dare
+tutte le risposte. Quindi ora devi scrivere un programma che ti aiuti nel tuo
+ruolo di Raju.
+
+INPUT
+
+Possono esserci più casi di test. Il numero totale di casi di test è inferiore a 65.
+Ogni caso di test inizia con 2 interi: N il numero di biglie e Q il numero di
+richieste che Meena farà. Le successive N righe conterranno i numeri scritti
+sulle N biglie. Questi numeri delle biglie non arriveranno in alcun ordine
+particolare. Le Q righe seguenti conterranno Q richieste. State certi che
+nessuno dei numeri di input è maggiore di 10000 e nessuno di essi è negativo.
+L'input è terminato da un caso di test in cui N = 0 e Q = 0.
+
+OUTPUT
+
+Per ogni caso di test, stampare il numero di serie del caso.
+Per ciascuna delle richieste, stampare una riga di output. Il formato di questa
+riga dipenderà dal fatto che il numero della richiesta sia o meno scritto su
+una delle biglie. I due diversi formati sono descritti di seguito:
+
+* 'x found at y', se la prima biglia con il numero x è stata trovata
+    alla posizione y. Le posizioni sono numerate 1; 2; : : : ; N.
+* 'x not found', se la biglia con il numero x non è presente.
+
+Guarda l'output per l'input d'esempio per i dettagli.
+
+ESEMPIO DI INPUT
+
+4 1
+2
+3
+5
+1
+5
+5
+2 3
+1
+2
+3
+0 0
+
+ESEMPIO DI OUTPUT
+
+CASE# 1:
+5 found at 4
+CASE# 2:
+2 not found
+3 found at 3

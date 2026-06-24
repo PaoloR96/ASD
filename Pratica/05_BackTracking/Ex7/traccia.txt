@@ -1,0 +1,20 @@
+Dato un labirinto rappresentato da una matrice 0/1 (0 = muro, 1 = strada),
+trovare un percorso valido dall’ingresso (in alto a sinistra) 
+all’uscita (in basso a destra).
+
+Input:
+
+labirinto = {
+  {1, 0, 1, 1},
+  {1, 1, 0, 1},
+  {0, 1, 1, 0},
+  {1, 1, 1, 1}
+}
+
+
+Output atteso (esempio di percorso)
+
+(0,0) → (1,0) → (1,1) → (2,1) → (3,1) → (3,2) → (3,3)
+
+
+💡 Obiettivo: gestire scelte multiple (su/giù/sinistra/destra) e controlli di validità sulle mosse.

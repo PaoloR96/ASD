@@ -1,0 +1,6 @@
+Si progetti progetti un algoritmo basato sulla tecnica Divide et Impera, e se ne analizzi la
+complessit`a, per il seguente problema algoritmico:
+Input: Array A = A[1...n] di n numeri interi positivi.
+Output:
+min(A[j] − A[i])
+1<=i<=j

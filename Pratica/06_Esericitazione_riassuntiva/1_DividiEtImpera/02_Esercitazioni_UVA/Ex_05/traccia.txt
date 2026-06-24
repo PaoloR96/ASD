@@ -1,0 +1,22 @@
+Risolvi l'equazione:
+p * e^(-x) + q * sin(x) + r * cos(x) + s * tan(x) + t * x^2 + u = 0
+dove 0 <= x <= 1.
+
+Input:
+L'input consiste in più casi di test e termina con EOF. 
+Ogni caso di test consiste in 6 numeri interi in una sola riga: p, q, r, s, t, u 
+(dove 0 <= p, r <= 20 e -20 <= q, s, t <= 0). 
+Ci saranno al massimo 2100 righe nel file di input.
+
+Output:
+Per ogni insieme di valori di input, deve esserci una riga contenente il valore di x, corretto fino a 4 cifre decimali, oppure la stringa "No solution", a seconda dei casi.
+
+Esempio di Input:
+0 0 0 0 -2 1
+1 0 0 0 -1 2
+1 -1 1 -1 -1 1
+
+Esempio di Output:
+0.7071
+No solution
+0.7554

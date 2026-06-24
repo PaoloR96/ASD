@@ -1,0 +1,17 @@
+PROBLEMA 1 
+Una sequenza di n > 0 interi si dice jolly se i valori assoluti della differenza tra gli elementi successivi 
+assumono tutti i valori da 1 a n − 1. 
+Ad esempio, 1 4 2 3 
+è una sequenza jolly, perché le differenze assolute sono, rispettivamente 3, 2 e 1. La definizione 
+implica che qualsiasi sequenza formata da un singolo intero è una sequenza jolly. Si implementi un 
+programma per determinare se una data sequenza in ingresso è una sequenza jolly. 
+INPUT  
+Ogni riga contiene un intero n ≤ 3000, seguito da n interi che rappresentano la sequenza. 
+OUTPUT 
+Per ogni riga di input, si generi una riga di output con il testo: "Jolly" o "Not jolly".  
+Sample Input 
+4 1 4 2 3 
+5 1 4 2 -1 6 
+Sample Output 
+Jolly 
+Not jolly

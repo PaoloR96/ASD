@@ -1,0 +1,3 @@
+Input: vettore a=a[1]a[2]...a[n], ordinato in senso crescente, di n numeri tutti distinti tra
+di loro tranne che per una coppia, con a[i] ∈ {1, 2, . . . , n − 1}, per ogni i = 1, . . . , n
+Output: l’unico intero k ∈ {1, 2, . . . , n − 1} che compare due volte in a

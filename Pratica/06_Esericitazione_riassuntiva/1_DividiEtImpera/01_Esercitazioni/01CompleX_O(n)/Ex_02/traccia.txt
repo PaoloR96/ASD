@@ -1,0 +1,6 @@
+Sia A = A[1] . . .A[n] un vettore di numeri, non necessariamente distinti e non
+necessariamente ordinati. Si scriva un algoritmo basato sulla tecnica 
+Divide et Impera che,dato A e due numeri qualsiasi L < U, 
+calcola quanti valori di A appartengono all’intervallo[L,U]. 
+Si analizzi la complessit`a di tempo dell’algoritmo proposto, 
+giustificando le affermazionifatte.

@@ -1,0 +1,16 @@
+| Complessità              | Relazione Ricorsiva Tipica  | Descrizione                                                       | Esempi                                                                                        |
+| ------------------------ | --------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| O(log n)                 | T(n) = T(n/2) + Θ(1)        | Un solo sottoproblema, combinazione costante                      | Ricerca binaria, massimo/minimo in un albero bilanciato                                       |
+| O(n)                     | T(n) = 2T(n/2) + Θ(1)       | Due sottoproblemi, combinazione costante                          | Massimo/minimo in un array, somma di tutti gli elementi                                       |
+| O(n log n)               | T(n) = 2T(n/2) + Θ(n)       | Due sottoproblemi, combinazione lineare                           | Merge Sort, Quick Sort (caso medio), CalcolaMinMax con scansione lineare                      |
+| O(n²)                    | T(n) = 2T(n/2) + Θ(n²)      | Due sottoproblemi, combinazione quadratica                        | Moltiplicazione matriciale naive, alcuni problemi geometrici con confronto di tutte le coppie |
+| O(n^log_b a) ≈ O(n^2.81) | T(n) = 7T(n/2) + Θ(n²)      | Divide et impera con più sottoproblemi e combinazione polinomiale | Algoritmo di Strassen per moltiplicazione matriciale                                          |
+| O(n log² n)              | T(n) = 2T(n/2) + Θ(n log n) | Due sottoproblemi, combinazione leggermente superiore a lineare   | Alcuni algoritmi geometrici avanzati                                                          |
+| O(n log n)               | T(n) = T(n/2) + Θ(n)        | Un sottoproblema, combinazione lineare                            | FFT (Fast Fourier Transform), Closest Pair in 2D                                              |
+
+
+Regola pratica:
+Divide et impera non garantisce complessità lineare: 
+la complessità dipende da numero di sottoproblemi + costo della combinazione.
+
+In generale, relazioni del tipo T(n) = 2T(n/2) + Θ(n) portano sempre a O(n log n)

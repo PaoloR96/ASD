@@ -1,0 +1,16 @@
+Scrivere un algoritmo che, dato un insieme S di numeri distinti e un numero intero k,
+generi tutte le combinazioni possibili di k elementi presi da S.
+In una combinazione, l’ordine non conta.
+
+Input:
+S = {1, 2, 3, 4}
+k = 2
+
+Output atteso:
+
+[1, 2]
+[1, 3]
+[1, 4]
+[2, 3]
+[2, 4]
+[3, 4]

@@ -1,0 +1,67 @@
+PROBLEMA: Somma più vicina
+
+Descrizione:
+È dato un insieme di interi seguito da una sequenza di interrogazioni.
+Un’interrogazione fornisce un numero e chiede di trovare una somma di due numeri distinti dell’insieme che sia la più vicina possibile al numero dato.
+
+Input:
+L’input contiene più casi.
+Ogni caso inizia con un intero n (1 < n ≤ 1000), che indica quanti numeri sono presenti nell’insieme di interi.
+Le n righe successive contengono i n numeri, uno per riga.
+La riga successiva contiene un intero positivo m che rappresenta il numero di interrogazioni, con 0 < m < 25.
+Le m righe successive contengono ciascuna un intero, uno per ogni interrogazione.
+L’input termina con un caso in cui n = 0. Questo caso naturalmente non deve essere elaborato.
+
+Output:
+Per ogni caso, stampa prima una riga:
+Caso k:
+dove k è il numero del caso (a partire da 1).
+
+Per ogni interrogazione del caso, stampa una riga nel formato:
+La somma più vicina a X è Y.
+dove X è il valore dell’interrogazione e Y è la somma di due numeri distinti dell’insieme più vicina a X.
+
+Gli input saranno tali da garantire che non ci siano ambiguità (nessun pareggio tra somme diverse).
+
+Esempio di Input:
+5
+3
+12
+17
+33
+34
+3
+1
+51
+30
+3
+1
+2
+3
+3
+1
+2
+3 dd 
+3
+1
+2
+3
+3
+4
+5
+6
+0
+
+Esempio di Output:
+Caso 1:
+La somma più vicina a 1 è 15.
+La somma più vicina a 51 è 51.
+La somma più vicina a 30 è 29.
+Caso 2:
+La somma più vicina a 1 è 3.
+La somma più vicina a 2 è 3.
+La somma più vicina a 3 è 3.
+Caso 3:
+La somma più vicina a 4 è 4.
+La somma più vicina a 5 è 5.
+La somma più vicina a 6 è 5.
